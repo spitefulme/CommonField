@@ -7,7 +7,7 @@ Commonfield is a self-hosted team whiteboard: an administrator creates a workspa
 Requirements: Git, Docker Engine/Desktop with the **Docker Compose v2** plugin, a POSIX shell, and internet access for the first build. No host Node.js, Python or package manager is required. On Windows use WSL2. Docker daemon access is administrative access; use a trusted host.
 
 ```sh
-git clone https://github.com/Guillermoreno/commonfield.git
+git clone https://github.com/spitefulme/CommonField.git commonfield
 cd commonfield
 ./setup.sh
 docker compose up -d --build --wait

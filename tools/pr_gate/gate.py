@@ -21,7 +21,7 @@ import urllib.request
 import uuid
 import zipfile
 
-REPO = 'Guillermoreno/commonfield'
+REPO = 'spitefulme/CommonField'
 WORKFLOW = '.github/workflows/pr-quality.yml'
 CONTEXT = 'SonarQube / whole-candidate'
 VERSION = '1'
