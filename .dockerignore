@@ -1,5 +1,9 @@
 *
 !Dockerfile
+!LICENSE
+!NOTICE
+!README.md
+!.dockerignore
 !compose*.yaml
 !package.json
 !pnpm-lock.yaml
