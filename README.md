@@ -2,6 +2,24 @@
 
 Commonfield is a self-hosted team whiteboard: an administrator creates a workspace, invites members, and collaborates on a shared board with persistent coloured sticky notes. This repository includes the application, PostgreSQL schema, focused tests and a portable Docker installation.
 
+## License
+
+Copyright (C) 2026 Guillermo Moreno.
+
+CommonField is free software licensed under the **GNU Affero General Public License,
+version 3 or (at your option) any later version** (`AGPL-3.0-or-later`). See
+[LICENSE](LICENSE) for the complete terms and [NOTICE](NOTICE) for the project notice.
+
+You may use, modify and redistribute CommonField, including commercially, subject
+to those terms. If you run a modified version as a network service, you must
+prominently offer its users access to the corresponding source code as required
+by section 13. The source must correspond to the version they are using, including
+modifications, not just link to an unchanged upstream repository.
+
+CommonField is provided without warranty. Third-party dependencies and assets
+retain their own licences and copyright notices; this project licence does not
+replace them.
+
 ## Local installation
 
 Requirements: Git, Docker Engine/Desktop with the **Docker Compose v2** plugin, a POSIX shell, and internet access for the first build. No host Node.js, Python or package manager is required. On Windows use WSL2. Docker daemon access is administrative access; use a trusted host.

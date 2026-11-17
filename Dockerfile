@@ -14,6 +14,7 @@ COPY src ./src
 COPY tests ./tests
 COPY docker ./docker
 COPY migrations ./migrations
+COPY README.md LICENSE NOTICE .dockerignore ./
 RUN pnpm test && pnpm run typecheck && pnpm run build
 
 # Disposable local SMTP fixture only; never used by the runtime image.
@@ -26,6 +27,7 @@ RUN pnpm prune --prod
 FROM node:22.22.0-bookworm-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
+COPY LICENSE NOTICE ./
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 COPY docker ./docker
